@@ -1,0 +1,35 @@
+{
+  "name": "@makozi/react-notify-stack",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "react-transition-group": ">=4"
+  },
+  "keywords": [
+    "react",
+    "notification",
+    "toast",
+    "animated",
+    "nextjs",
+    "stacked-toast",
+    "notify"
+  ],
+  "author": "Makozi Marizu-Ibewiro",
+  "license": "MIT",
+  "description": "Animated notification system with stacked toasts and custom positions for React and Next.js",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.46.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  }
+}
