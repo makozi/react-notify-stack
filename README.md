@@ -122,6 +122,21 @@ Contributions are welcome! Please open issues or submit PRs for improvements or 
 
 ---
 
+
+---
+
+## Visualization
+
+Below are visual examples of the toast notifications:
+
+### Bottom Right Toast
+![Bottom Right Toast]({D983D394-D526-49C6-B5DA-9891F3CB0303}.png)
+
+### Bottom Left Toast
+![Bottom Left Toast]({F71D2B51-0346-4917-BC47-F69AD9546B0F}.png)
+
+---
+
 ## License
 
 MIT © Makozi Marizu-Ibewiro
@@ -136,3 +151,9 @@ MIT © Makozi Marizu-Ibewiro
 ## Homepage
 
 [https://github.com/makozi/react-notify-stack](https://github.com/makozi/react-notify-stack)
+
+![Bottom Right Toast]({D983D394-D526-49C6-B5DA-9891F3CB0303}.png)
+
+
+![Bottom Left Toast]({F71D2B51-0346-4917-BC47-F69AD9546B0F}.png)
+
