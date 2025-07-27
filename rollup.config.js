@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
+import postcss from 'rollup-plugin-postcss';
 
 export default {
   input: 'src/index.ts',
@@ -19,7 +20,18 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true })
+    typescript({
+      useTsconfigDeclarationDir: true,
+      clean: true // ensures declarations are rebuilt cleanly
+    }),
+    postcss({
+      extract: true, // Creates a separate CSS file in dist
+      minimize: true
+    })
   ],
-  external: ['react', 'react-dom']
+  external: [
+    'react',
+    'react-dom',
+    'react-transition-group'
+  ]
 };

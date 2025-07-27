@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useNotify } from './NotifyContext';
 import { Toast } from './Toast';
-import { Position } from './types';
+import { Position, ToastProps } from './types';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './toast-animations.css';
 
@@ -31,15 +31,21 @@ export const ToastContainer = () => {
           <TransitionGroup>
             {toasts
               .filter((toast) => toast.position === pos)
-              .map((toast) => (
-                <CSSTransition
-                  key={toast.id}
-                  timeout={300}
-                  classNames="toast"
-                >
-                  <Toast {...toast} onClose={() => remove(toast.id)} />
-                </CSSTransition>
-              ))}
+              .map((toast) => {
+                const nodeRef = useRef(null);
+                return (
+                  <CSSTransition
+                    key={toast.id}
+                    nodeRef={nodeRef}
+                    timeout={300}
+                    classNames="toast"
+                  >
+                    <div ref={nodeRef}>
+                      <Toast {...toast} onClose={() => remove(toast.id)} />
+                    </div>
+                  </CSSTransition>
+                );
+              })}
           </TransitionGroup>
         </div>
       ))}

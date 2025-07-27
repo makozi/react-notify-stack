@@ -12,7 +12,7 @@ interface Props extends ToastProps {
   onClose: () => void;
 }
 
-export const Toast = ({ message, type = 'info', onClose }: Props) => {
+export const Toast = ({ message, type, onClose }: Props) => {
   return (
     <div
       style={{

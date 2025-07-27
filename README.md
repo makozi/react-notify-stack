@@ -125,3 +125,14 @@ Contributions are welcome! Please open issues or submit PRs for improvements or 
 ## License
 
 MIT © Makozi Marizu-Ibewiro
+
+
+---
+
+## Repository
+
+[https://github.com/makozi/react-notify-stack](https://github.com/makozi/react-notify-stack)
+
+## Homepage
+
+[https://github.com/makozi/react-notify-stack](https://github.com/makozi/react-notify-stack)

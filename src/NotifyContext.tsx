@@ -19,7 +19,7 @@ export const NotifyProvider = ({ children }: { children: ReactNode }) => {
   const [toasts, setToasts] = useState<ToastProps[]>([]);
 
   const notify = (message: string, options: Partial<ToastProps> = {}) => {
-    const id = Math.random().toString(36).substr(2, 9);
+    const id = Math.random().toString(36).substring(2, 11);
     const toast: ToastProps = {
       id,
       message,
